@@ -1,0 +1,12 @@
+pipelne {
+  agent any
+
+  stages{
+    stage('check ram')
+    {
+      steps{
+        sh 'free -m'
+        }
+    }
+  }
+}
