@@ -14,7 +14,7 @@ pipeline{
     }
     stage ('deployment') {
       steps{
-        sh 'sudo cp -rf  /var/lib/jenkins/workspace/myFirstJob/* /var/www/html/'
+        sh 'sudo cp -rf  /var/lib/jenkins/workspace/myFirstJob/* /var/www/html'
       }
     }
     stage ('restart') {
