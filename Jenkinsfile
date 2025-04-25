@@ -2,7 +2,7 @@ pipeline{
   agent any
   
   stages{
-    stage('web app') {
+    stage('curr loc') {
       steps{
         sh 'pwd'
       }
