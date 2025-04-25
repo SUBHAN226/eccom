@@ -2,14 +2,14 @@ pipeline{
   agent any
   
   stages{
-    stage('build') {
+    stage('web app') {
       steps{
-        echo "build"
+        sh ' sudo apt install nginx -y'
       }
     }
-    stage('deploy') {
+    stage('default page removal') {
       steps{
-        echo "deploy"
+        sh 'sudo rm -rf var/www/html/*'
       }
     }
   }
