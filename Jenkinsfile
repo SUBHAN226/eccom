@@ -9,7 +9,7 @@ pipeline{
     }
     stage('default page removal') {
       steps{
-        sh 'sudo rm -rf var/www/html/*'
+        sh 'sudo rm -rf /var/www/html/'
       }
     }
   }
